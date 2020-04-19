@@ -3,7 +3,7 @@ import pytest
 
 @pytest.fixture()
 def first_fixture_for_request(request):
-    print("___________________________")
+    print("\n___________________________")
     print(f"{request.node}")
     print(f"{request.scope}")
     print(f"{request.cls}")

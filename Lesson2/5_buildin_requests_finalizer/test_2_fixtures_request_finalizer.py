@@ -3,10 +3,13 @@ import pytest
 
 @pytest.fixture()
 def first_fixture_for_request(request):
+    print("\nTear Up ")
     def fin():
         print("\nThis is finalizer from first_fixture_for_request ")
 
     request.addfinalizer(fin)
+    # yield
+    # print("\nThis is finalizer from first_fixture_for_request")
 
 
 def test_one(first_fixture_for_request):
