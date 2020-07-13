@@ -14,8 +14,8 @@ def pytest_generate_tests(metafunc):
         ])
 
     # Открываем выбранный файл
-    with open("test", 'r') as f:
-        test_case = f.__next__()
+#     with open("test", 'r') as f:
+#         test_case = f.__next__()
     #
     # return metafunc.parametrize("urls", test_case)
 
